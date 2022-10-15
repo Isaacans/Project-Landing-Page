@@ -1,0 +1,54 @@
+body {
+    margin: 0px;
+}
+.hero-container,
+.hero-header,
+.main-container,
+.quote-container,
+.sub-container {
+    
+}
+
+.hero-section {
+    background-color: #1F2937;
+    min-height: 350px;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 700px;    
+}
+
+.hero-main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero-header {
+    display: flex;
+    justify-content: space-between;
+    max-width: 800px;
+    margin-top: 10px;
+}
+
+.main-section {
+    min-height: 250px;
+}
+
+.quote-section {
+    background-color: #E5E7EB;
+    min-height: 200px;
+}
+
+.sub-contsectionainer {
+    min-height: 150px;
+}
+
+.footer-container {
+    background-color: #1F2937;
+    min-height: 50px;
+}
