@@ -28,6 +28,16 @@ body {
     background-color:#3882F6;
 }
 
+.button1 {
+    background-color:#3882F6;
+    border-radius: 5px;
+    border-style: hidden;
+    padding: 5px 25px 5px 25px;
+    color: #F9FAF8;
+    cursor: pointer;
+    margin-top: 7px;
+}
+
 .button2 {
     background-color:#3882F6;
     border: 2px solid #ffffff;
@@ -72,11 +82,64 @@ body {
 
 .first-container {
     background-color: #1F2937;
-    min-height: 350px;
+    min-height: 500px;
     display: flex;
     justify-content: center;
 }
 
+.first-container-box {
+    display: flex;
+    width: 900px;
+    flex-direction: column;
+}
+
+.first-container-box-child1 {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0px 75px 0px;
+}
+
+.first-container-box-child1-child2 {
+    display: flex;
+}
+
+.first-container-box-child1-child1-child1 {
+    color: #f9faf8;
+    font-size: 24px;
+}
+
+.first-container-box-child1-child2 div a{
+    color: #e5e7eb;
+    font-size: 18px;
+    margin-left: 15px;
+}
+
+
+
+.first-container-box-child2 {
+    display: flex;
+}
+
+.first-container-box-child2-child1-child1 {
+    font-size: 48px;
+    font-weight:bolder;
+    color: #f9faf8;
+}
+
+.first-container-box-child2-child1-child2 {
+    color:#F9FAF8;
+}
+
+.first-container-box-child2-child2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6f7781;
+    color:#F9FAF8;
+    height: 200px;
+    width: 950px;
+    margin-left: 50px;
+}
 
 /* old section temp removed below
 
