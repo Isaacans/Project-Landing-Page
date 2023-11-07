@@ -1,18 +1,14 @@
+/* The layout of this CSS document is based on each of the 5 main
+rows of index.html with styles specific to each one of the rows 
+being placed together (The rows are referred to as first-container, 
+second-container, third-container, etc).
+
+Styles that influence multiple rows, or sections of the page, are
+placed at the top of this document, under "cross-page styles". */
+
+/* Start of cross-page styles */
 body {
     margin: 0px;
-}
-.hero-container,
-.hero-header,
-.main-container,
-.quote-container,
-.sub-container {
-    
-}
-/* Start of text, button, boxes & banner styles */
-
-.header-logo-text {
-    font-size: 24px;
-    color: #F9FAF8;
 }
 
 .secondary-text {
@@ -21,174 +17,94 @@ body {
     font-size: 18px;
 }
 
-
-
-.button,
+button,
 .banner {
     background-color:#3882F6;
-}
-
-.button1 {
-    background-color:#3882F6;
-    border-radius: 5px;
-    border-style: hidden;
-    padding: 5px 25px 5px 25px;
-    color: #F9FAF8;
-    cursor: pointer;
-    margin-top: 7px;
-}
-
-.button2 {
-    background-color:#3882F6;
-    border: 2px solid #ffffff;
-    border-radius: 5px;
-    padding: 5px 25px 5px 25px;
+    border-radius: 8px;
+    padding: 10px 35px 10px 35px;
     color: #F9FAF8;
     cursor: pointer;
 }
-
-/* End of text, button, boxes & banner styles */
-
+/* End of cross-page styles */
 
 /* Start of container styles */
-.banner {
-    min-height: 150px;
-    min-width: 900px;
-    border-radius: 5px;
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-.container-item {
-    width: 700px;
-    display: flex;
-    flex-direction: column;
-    margin: 15px;
-}
-.container-item>*:nth-child(1) {
-    align-self: flex-end;
-    font-size: 36px;
-    color: #1F2937;
-    font-style: italic;
-    font-weight: lighter;
-}
-.container-item>*:nth-child(2) {
-    align-self: flex-end;
-    font-size: 20px;
-    color: #000000;
-    font-weight: bolder;
-}
-
+/* Start of first container styles, including elements */
 .first-container {
     background-color: #1F2937;
-    min-height: 500px;
+    color: #f8f8fa;
+    min-height: 510px;
     display: flex;
     justify-content: center;
 }
 
 .first-container-box {
-    display: flex;
-    width: 900px;
-    flex-direction: column;
+    width: 940px;
 }
 
-.first-container-box-child1 {
+.first-container-box > div {
     display: flex;
+}
+
+.first-container-row1 {
     justify-content: space-between;
-    margin: 10px 0px 75px 0px;
+    margin: 20px 0px 110px 0px;
 }
 
-.first-container-box-child1-child2 {
-    display: flex;
-}
-
-.first-container-box-child1-child1-child1 {
-    color: #f9faf8;
+.first-container-row1-column1 {
     font-size: 24px;
 }
 
-.first-container-box-child1-child2 div a{
+.first-container-row1-column2 a{
     color: #e5e7eb;
     font-size: 18px;
-    margin-left: 15px;
+    margin-left: 10px;
+    text-decoration: none;
 }
 
-
-
-.first-container-box-child2 {
-    display: flex;
-}
-
-.first-container-box-child2-child1-child1 {
+.first-container-row2-column1 > .special-font {
     font-size: 48px;
     font-weight:bolder;
-    color: #f9faf8;
 }
 
-.first-container-box-child2-child1-child2 {
-    color:#F9FAF8;
+.first-container-row2-column1 > button {
+    border-style: hidden;
+    margin-top: 7px;
 }
 
-.first-container-box-child2-child2 {
+.first-container-row2-column2 {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #6f7781;
     color:#F9FAF8;
-    height: 200px;
-    width: 950px;
+    height: 230px;
+    width: 1020px;
     margin-left: 50px;
 }
-
-/* old section temp removed below
-
-.hero-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    max-width: 700px;    
-}
-
-.hero-main {
-    display: flex;
-    justify-content: space-between;
-}
-
-.hero-header {
-    display: flex;
-    justify-content: center;
-    max-width: 800px;
-    margin-top: 10px;
-}
-
-end of old section temp removed above*/
+/* End of first container styles, including elements */
 
 /* Second container including elements */
 .second-container {
-    height: 450px;
+    height: 500px;
     display: flex;
     flex-direction: column;
 }
+
 .information-header-text {
     font-size: 36px;
     font-weight: bolder;
     color: #1F2937;
-    padding: 35px;
+    padding: 45px;
     text-align: center;
 }
+
 .image-box2-container {
     width: 700px;
     display: flex;
     align-self: center;
     justify-content: space-around;
 }
-.image-box2-caption-container {
-    width: 700px;
-    display: flex;
-    align-self: center;
-    justify-content: space-around;
-}
+
 .image-box2 {
     border: 3px solid #3882F6;
     border-radius: 10px;
@@ -197,23 +113,57 @@ end of old section temp removed above*/
     width: 135px;
     height: 135px;
 }
+
+.image-box2-caption-container {
+    width: 700px;
+    display: flex;
+    align-self: center;
+    justify-content: space-around;
+}
+
 .image-box2-caption {
     width: 135px;
     font-size: 16px;
     margin: 5px;
     color: #252525;
+    text-align: center;
 }
 /* End of second container including elements */
 
+/* Start of third container including elements */
 .third-container {
     background-color: #E5E7EB;
-    min-height: 400px;
+    min-height: 420px;
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
+.third-container-item {
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+}
+
+.third-container-item > div {
+    align-self: flex-end;
+}
+
+.third-container-item > *:nth-child(1) {
+    font-size: 36px;
+    color: #1F2937;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+.third-container-item > *:nth-child(2) {
+    font-size: 20px;
+    color: #000000;
+    font-weight: bolder;
+}
+/* End of third container including elements */
+
+/* Start of fourth container including elements */
 .fourth-container {
     min-height: 350px;
     display: flex;
@@ -221,6 +171,25 @@ end of old section temp removed above*/
     align-items: center;
 }
 
+.banner {
+    min-height: 130px;
+    min-width: 870px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.header-logo-text {
+    font-size: 24px;
+}
+
+.button2 {
+    border: 2px solid #ffffff;
+}
+/* End of fourth container including elements */
+
+/* Start of fifth container including elements */
 .fifth-container {
     background-color: #1F2937;
     min-height: 100px;
@@ -228,4 +197,6 @@ end of old section temp removed above*/
     justify-content: center;
     align-items: center;
 }
+/* End of fifth container including elements */
+
 /* End of container styles */
